@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Review</title>
+
+</head>
+<body>
+    <header>
+        <h1>Movies Review</h1>
+        <nav>
+            <ul>
+                <li><a href="#latest-reviews">Latest Reviews</a></li>
+                <li><a href="#top-rated">Top Rated</a></li>
+                <table>
+
+                    <tr>
+                     <th>Rank</th>
+                     <th>Title</th>
+                     <th>Year</th>
+                     <th>Rating</th>
+                     <th>Genre</th>
+                   </tr>
+                   <tr>
+                     <td>1</td>
+                     <td>Top Movie</td>
+                     <td>2023</td>
+                     <td>★★★★★</td>
+                     <td>Action</td>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#about-us">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="latest-reviews">
+        <h2>Latest Reviews</h2>
+        <h3>Blacklist Series Trailer</h3>
+       <iframe width="560" height="315" src="https://www.youtube.com/watch?v=iSiqmV13Ffk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+    </section>
+
+    <section id="top-rated">
+        <h2>Top Rated Movies</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Genre</th>
+            </tr>
+        </table>
+    </section>
+
+    <aside>
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#upcoming-movies">Upcoming Movies</a></li>
+            <li><a href="#interviews">Interviews with Directors</a></li>
+        </ul>
+    </aside>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form action="/submit-contact-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="genre">Favorite Movie Genre:</label>
+            <select id="genre" name="genre">
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+            <label for="subscribe">Subscribe to newsletters</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Movies Review</p>
+    </footer>
+
+</body>
+</html>
